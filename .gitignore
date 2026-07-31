@@ -25,3 +25,4 @@ node_modules/
 # WorkBuddy
 .workbuddy/
 .git.bak/
+vite.config.js.timestamp-*.mjs

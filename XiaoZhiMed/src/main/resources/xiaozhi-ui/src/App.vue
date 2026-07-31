@@ -1,14 +1,15 @@
 <template>
-  <ChatWindow/>
+  <router-view />
 </template>
-
-<script setup>
-import ChatWindow from '@/components/ChatWindow.vue'
-</script>
 
 <style>
 html,
-body {
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
 }
 </style>

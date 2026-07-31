@@ -1,0 +1,1 @@
+import{a as o}from"./index-t--hEgTQ.js";import{E as s}from"./index-o_yzlIUh.js";const t=o.create({baseURL:"/api",timeout:15e3});t.interceptors.response.use(r=>{const e=r.data;return e&&typeof e=="object"&&"code"in e&&e.code!==200?(s.error(e.msg||"操作失败"),Promise.reject(new Error(e.msg||"Error"))):e},r=>(s.error(r.message||"网络异常，请稍后重试"),Promise.reject(r)));export{t as r};
