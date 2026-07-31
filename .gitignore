@@ -1,0 +1,27 @@
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+*.log
+hs_err_pid*.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Node / Vite
+node_modules/
+*.local
+.DS_Store
+
+# 前端构建产物保留（Spring Boot 直接托管 dist），如需忽略可取消注释下一行
+# XiaoZhiMed/src/main/resources/xiaozhi-ui/dist/
+
+# WorkBuddy
+.workbuddy/
+.git.bak/

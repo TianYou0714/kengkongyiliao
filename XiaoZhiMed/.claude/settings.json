@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" -C \"f:\\\\rjgc-code\\\\XiaoZhiMed-Langchain4j\\\\XiaoZhiMed\" log --oneline --all -30)",
+      "PowerShell(Get-Command git -ErrorAction SilentlyContinue)",
+      "PowerShell(if \\(-not \\(Test-Path \"F:\\\\a1\"\\)\\) { New-Item -ItemType Directory -Force -Path \"F:\\\\a1\" }; Get-ChildItem \"F:\\\\a1\")",
+      "Read(//f/a1/**)",
+      "PowerShell(Remove-Item \"F:\\\\a1\\\\00-README-先看这里.md\", \"F:\\\\a1\\\\01-项目概览.md\", \"F:\\\\a1\\\\02-架构设计.md\", \"F:\\\\a1\\\\03-代码逐文件详解.md\", \"F:\\\\a1\\\\04-核心流程.md\", \"F:\\\\a1\\\\05-设计思想.md\", \"F:\\\\a1\\\\06-简历与面试.md\"; Write-Host \"旧文件已删除\"; Write-Host \"\"; Write-Host \"F:\\\\a1\\\\ 目录内容:\"; Get-ChildItem \"F:\\\\a1\" | ForEach-Object { Write-Host \"  $\\($_.Name\\) — $\\($_.Length\\) 字节\" })"
+    ],
+    "additionalDirectories": [
+      "F:\\a1"
+    ]
+  }
+}
